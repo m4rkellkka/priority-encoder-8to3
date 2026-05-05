@@ -1,0 +1,10 @@
+Starting Simulation...
+Time=10000 | D=00000000 -> Y=0, V=0 | Expected: Y=0, V=0
+Time=20000 | D=00000001 -> Y=0, V=1 | Expected: Y=0, V=1
+Time=30000 | D=00000100 -> Y=2, V=1 | Expected: Y=2, V=1
+Time=40000 | D=10000000 -> Y=7, V=1 | Expected: Y=7, V=1
+Time=50000 | D=00000101 -> Y=2, V=1 | Expected: Y=2, V=1
+Time=60000 | D=00011010 -> Y=4, V=1 | Expected: Y=4, V=1
+Time=70000 | D=11111111 -> Y=7, V=1 | Expected: Y=7, V=1
+Simulation Finished.
+testbench.v:61: $finish called at 80000 (1ps)
