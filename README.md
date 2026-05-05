@@ -14,10 +14,6 @@ Unlike a standard encoder, this priority encoder elegantly handles multiple simu
 * **Priority Handling:** The inputs are ranked from `D[7]` (Highest Priority) down to `D[0]` (Lowest Priority). If multiple signals arrive at the same time, the circuit exclusively encodes the bit with the highest index.
 * **The Valid Signal (`V`):** A critical 1-bit output indicator. It outputs `1` if *any* input is active. It outputs `0` when all inputs are completely dormant. This prevents the system from confusing a legitimate `D[0]` input (which encodes to `000`) with a "no input" idle state.
 
-## 📁 File Structure
-* 📜 `design.v` — The core hardware implementation using Verilog combinational logic (`always @(*)` and bitwise reduction operators).
-* 🧪 `testbench.v` — The QA verification environment. It simulates multiple edge cases: idle state, single bits, and simultaneous active signals to guarantee logical accuracy.
-
 ## 🚀 How to Run the Simulation
 
 To compile the code and view the digital waveforms, you need **Icarus Verilog** and **GtkWave** installed on your system.
